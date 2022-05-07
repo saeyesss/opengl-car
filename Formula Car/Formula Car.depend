@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1651931030 source:e:\school\be - cse (2019-23)\sixth semester\projects\cg project\formula car\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+	<math.h>
+
+976692172 c:\program files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
