@@ -1,19 +1,20 @@
 /*
     Computer Graphics Mini Project
     Title: "Formula Racer"
-    Team:  4NM19CS179 SHOBHIT RAI 4NM19CS185 SHREYAS N
+    Team:  4NM19CS179 SHOqBHIT RAI 4NM19CS185 SHREYAS N
     Tools: C, OpenGL, Visual Studio Code
 
 */
 
 #include <windows.h>
-#include <GL/glut.h>
 #include <stdio.h>
 #include <math.h>
+#include <GL/glut.h>
 
-#define PI 3.142
+
+#define PI 3.14
 #define TWO_PI 2.0 * PI
-#define c 3.142 / 180.0
+#define c 3.14 / 180
 #define RAD_TO_DEG 180.0 / PI
 
 // Global stuff
@@ -24,7 +25,7 @@ enum // Constants for different views
     FRONT,
     SIDE,
     BACK
-} viewpoint = FRONT;
+} viewpoint = BACK;
 
 char KEY; // Variable that stores key pressed by user
 
@@ -149,7 +150,7 @@ void cylinder(float r, float l)
 void chassis()
 {
     // Parameters For glMaterialfv() function
-    GLfloat specular[] = {0.7, 0.7, 0.7, 1.0};
+    GLfloat specular[] = {1, 1, 1, 1.0};
     GLfloat ambient[] = {1, 1, 1, 1}, diffuse[] = {0.7, 0.7, 0.7, 1};
     GLfloat full_shininess[] = {100.0};
 
@@ -625,10 +626,10 @@ void idle()
 
     if (start == 1)
     {
-        angle += 0.05;
+        angle -= 0.005;
 
         if (angle == TWO_PI)
-            angle -= TWO_PI;
+            angle += TWO_PI;
 
         carx = MID * sin(angle);
         cary = MID * cos(angle);
