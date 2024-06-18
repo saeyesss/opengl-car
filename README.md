@@ -1,4 +1,4 @@
-# formulaCar
+# opengl-car
 
 #### Mini Project as part of my Computer Graphics course
 
